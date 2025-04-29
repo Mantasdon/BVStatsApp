@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="sand">#FDE4B0</color>
+    <color name="blue">#0B3191</color>
+    <color name="lightblue">#3E5492</color>
+    <color name="red">#C12121</color>
+    <color name="pastelred">#C45555</color>
+    <color name="yellow">#E8CD21</color>
+    <color name="pastelyellow">#E2CD55</color>
+    <color name="green">#1F802C</color>
+    <color name="lightgreen">#4E8250</color>
+    <color name="grey">#828282</color>
+
+
+
+
+
+    <color name="primaryColor">#6200EE</color> <!-- Replace with your desired color -->
+    <color name="primaryDarkColor">#3700B3</color> <!-- Replace with your desired color -->
+    <color name="accentColor">#03DAC5</color> <!-- Replace with your desired color -->
+
+    <!-- Selector Button Text Color -->
+    <color name="selector_button_text_color">#000000</color> <!-- Replace with your desired color -->
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D6C6">
+
+    <!-- First RadioGroup -->
+    <RadioGroup
+        android:id="@+id/firstGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/btnSpike"
+            style="@style/OptionButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Spike" />
+
+        <RadioButton
+            android:id="@+id/btnShot"
+            style="@style/OptionButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Shot" />
+
+        <RadioButton
+            android:id="@+id/btnBlocked"
+            style="@style/OptionButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Blocked" />
+
+        <RadioButton
+            android:id="@+id/btnPokey"
+            style="@style/OptionButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Pokey" />
+    </RadioGroup>
+
+    <!-- Second RadioGroup -->
+    <RadioGroup
+        android:id="@+id/secondGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstGroup">
+
+        <RadioButton
+            android:id="@+id/btnDefended"
+            style="@style/OptionButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Defended" />
+
+        <RadioButton
+            android:id="@+id/btnKills"
+            style="@style/OptionButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Kills" />
+    </RadioGroup>
+
+    <!-- Blue Square -->
+    <View
+        android:id="@+id/blue_square"
+        android:layout_width="160dp"
+        android:layout_height="320dp"
+        android:background="@drawable/blue_outline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondGroup" />
+
+    <!-- White Line -->
+    <View
+        android:id="@+id/white_line"
+        android:layout_width="200dp"
+        android:layout_height="7dp"
+        android:background="@drawable/white_line"
+        app:layout_constraintBottom_toBottomOf="@+id/blue_square"
+        app:layout_constraintEnd_toEndOf="@+id/blue_square"
+        app:layout_constraintStart_toStartOf="@+id/blue_square"
+        app:layout_constraintTop_toTopOf="@+id/blue_square"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <!-- Stats Drawing View -->
+    <com.mantas.bvstatsapp.ui.StatsDrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="225dp"
+        android:layout_height="357dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Drawing area for volleyball statistics"
+        app:layout_constraintBottom_toBottomOf="@+id/blue_square"
+        app:layout_constraintEnd_toEndOf="@+id/blue_square"
+        app:layout_constraintStart_toStartOf="@+id/blue_square"
+        app:layout_constraintTop_toTopOf="@+id/blue_square" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
